@@ -12,7 +12,7 @@
 * the element would wrap itself according to the size of the content within it
 * Both width and hiegh properties cannot be applied
 * horziontal padding, margin and broders can cause other inline boxes to move away from the box
-*examples are: ```<a>```, ```<span>```, ```<em>```, ```<strong>```,etc.
+* examples are: ```<a>```, ```<span>```, ```<em>```, ```<strong>```,etc.
 <hr>
 
 ### display: inline-block
