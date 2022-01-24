@@ -1,0 +1,34 @@
+p{
+    border: 2px solid purple;
+    padding: 7px;
+    /* display: inline; */
+}
+ul{
+    border:2px solid black;
+    /* padding: 20px; */
+    display: inline-flex;
+    /* display: flex; */
+    padding: 0;
+}
+li{
+    border: 2px solid blue;
+    /* margin: 3px; */
+    list-style-type: none;
+    /* display: ; */
+}
+span.block{
+    border: 2px solid red;
+}
+span.inline{
+    border: 2px solid yellowgreen;
+    /* display: block; */
+    /* margin:30px; */
+    padding-left: 20px;
+    /* height: 200px;
+    width: 200px; */
+}
+span.test{
+    border: 2px solid rgb(187, 53, 126);
+    /* padding-right: 20px; */
+    
+}
