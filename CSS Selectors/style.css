@@ -1,0 +1,62 @@
+/* star selector: selects all the tags in the document => body,div,span,ul,li */
+* {
+  background: red;
+}
+/* element selectors */
+/* div{
+    background: yellow;
+} */
+/* class selectors */
+.white {
+  background: white;
+}
+/* id selectors */
+/* #blue{
+    background: blue;
+} */
+/* to select element inside any element */
+ul li {
+  background: yellow;
+}
+/* direct child selectors */
+div > b {
+  color: white;
+}
+/* pseudo classes */
+li:hover {
+  background: white;
+}
+input:focus {
+  /* this would change the background color once the user clicks on the input field and would return to its original state once the user clicks out of the field */
+  background: white;
+}
+li:first-child {
+  /* this selects the very first child li */
+  background: pink;
+}
+li:last-child{
+    /* this selects the very last mose child li */
+    background: powderblue;
+}
+li:nth-child(2n){
+    /* this selects the li satisfying the formula */
+    background: purple;
+}
+li:nth-last-child(3n){
+    /* this selects the li satisfying the formula from the last */
+    background: greenyellow;
+}
+span:only-child{
+    /* this selects the only child in the parent */
+    border: 2px solid black;
+}
+li:not(.pseudo){
+    /* this selects the li which don't pseudo class  */
+    color: white;
+}
+/* atttribute selectors */
+[value="123"]{
+    /* this will select the elements having attribute as value="123" */
+    /* one can use ^ or $ before = to partially match the value from start or end of the string */
+    background: white;
+}
