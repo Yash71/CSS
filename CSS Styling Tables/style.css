@@ -1,0 +1,65 @@
+/* spacing */
+table{
+    table-layout: fixed;
+    width: 100%;
+    border: 3px solid purple;
+    border-collapse: collapse;
+}
+thead th:nth-child(1){
+    width: 30%;
+}
+thead th:nth-child(2){
+    width: 20%;
+}
+thead th:nth-child(3){
+    width: 10%;
+}
+thead th:nth-child(4){
+    width: 35%;
+}
+th,td{
+    padding: 30px;
+}
+/* spacing */
+
+/* typography */
+th{
+    letter-spacing: 2px;
+}
+tbody td{
+    letter-spacing: 1px;
+    text-align: center;
+}
+tfoot th{
+    text-align: right;
+}
+/* typography */
+
+/* zebra stripping */
+thead th,tfoot th,tfoot td{
+    border: 2px solid black;
+}
+thead,tfoot{
+    background: rgb(155, 74, 151);
+    color: white;
+    font-size: 1rem;
+    /* text-shadow: 1px 1px 1px 1px black; */
+}
+tbody tr:nth-child(even){
+    background: rgb(199, 103, 186);
+}
+tbody tr:nth-child(odd){
+    background: rgb(218, 139, 207);
+}
+/* zebra stripping */
+
+
+/* styling the caption */
+caption{
+    padding: 20px;
+    font-size: 2rem;
+    caption-side: bottom;
+    text-align: right;
+    letter-spacing: 1px;
+}
+/* styling the caption */
