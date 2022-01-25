@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  /* margin: auto 10vh; */
+  margin: 0;
+  /* height: 50v; */
+}
+.card {
+    width: 30vw;
+    height: 31vh;
+    border: 2px solid black;
+    border-radius: 17px;
+    background: red;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: hidden;
+    margin: 30vh auto;
+}
+.card header,footer{
+    box-sizing: border-box;
+    height: 2.8em;
+    padding: 10px;
+    border-radius: 1.3em;
+
+}
+.card header {
+  background: linear-gradient(to right, #3a6186, #89253e);
+}
+.card header> h2{
+    font-size: 1.3em;
+}
+.card footer {
+  background: linear-gradient(to right, #3a6186, #89253e);
+}
+.card article{
+    height: 8em;
+}
+.card img{
+    float: right;
+    max-height: 100%;
+    background: rgba(0, 0, 0, 0.582);
+}
