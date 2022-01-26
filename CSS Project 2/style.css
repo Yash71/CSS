@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+::selection {
+  color: #ffff;
+  background: #a66;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  line-height: 3;
+  letter-spacing: 1px;
+}
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+/* header */
+header h1 {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  width: 50%;
+  margin: 20px auto;
+  font-family: "Playfair Display", serif;
+}
+/* header */
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.4rem;
+
+  font-family: "Fira Sans", sans-serif;
+}
+/* anchor tags */
+a {
+  font-size: 1.4rem;
+  color: #a66;
+}
+a:hover {
+  background: #a66;
+  text-decoration: none;
+  color: white;
+}
+/* anchor tags */
+
+/* section area */
+section {
+  float: left;
+  width: 50%;
+  line-height: 2;
+}
+section h2 + p {
+  text-indent: 20px;
+}
+section ul li,
+ol li {
+  font-size: 1.4rem;
+  list-style-type: square;
+}
+/* section area */
+
+/* aside area */
+aside {
+  float: left;
+  width: 30%;
+  line-height: 2;
+}
+aside ul li {
+  font-size: 1.4rem;
+  list-style-type: square;
+}
+/* aside area */
+
+/* navigation menu */
+nav {
+  float: left;
+  width: 20%;
+  line-height: 2;
+}
+nav ul {
+  list-style-type: none;
+  /* border-collapse: collapse; */
+}
+nav ul li {
+  border: 2px solid rgb(160, 109, 109);
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav ul li:hover {
+  background: #a66;
+  text-decoration: none;
+  color: white;
+}
+/* navigation menu */
+
+/* footer */
+footer {
+  clear: both;
+}
+/* footer */
