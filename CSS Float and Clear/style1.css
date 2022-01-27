@@ -1,0 +1,47 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207, 232, 220);
+  padding: 1em;
+  float: left;
+  margin: 15px;
+}
+.testing {
+  background: orange;
+  padding: 12px;
+}
+/* .cleared{
+      clear: left;
+  } */
+.wrapper {
+  background: rgb(79, 185, 227);
+  padding: 10px;
+  color: #fff;
+}
+/* when we put a background color on the paragraph, the background color runs behind the float */
+/* Clearing the following element won't work.  */
+
+/* The clearfix hack */
+/* .wrapper::after{
+      content:"";
+      clear:both;
+      display: block;
+  } */
+
+/* using overflow */
+/* .wrapper{
+    overflow: auto ;
+} */
+
+/* using display:flow-root */
+.wrapper {
+  display: flow-root;
+}
