@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grids 2</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .wrapper {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      /* grid-auto-rows: 100px; */
+      grid-auto-rows: minmax(
+        100px,
+        auto
+      ); /* minimum height of rows would be 100px and maximum would be adjusted according to the content */
+    }
+    .nested {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .wrapper > div {
+      background: #eee;
+      padding: 1em;
+      grid-auto-rows: 70px;
+      gap: 1em;
+    }
+    .wrapper > div:nth-child(odd) {
+      background: #ddd;
+    }
+    .nested>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        padding: 1em;
+        /* text-align: center; */
+    }
+  </style>
+  <body>
+    <h1>Explaining grids 2</h1>
+    <div class="wrapper">
+      <div>Lorem ipsum dolor sit.</div>
+      <div>
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Rem repellat illo odio soluta blanditiis omnis
+        provident, rerum laudantium error, iure beatae eos exercitationem
+        quaerat illum ullam id commodi! Perferendis, porro! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Expedita nihil, cumque laudantium
+        impedit quasi animi! Iure enim facilis similique, maiores quaerat
+        perferendis doloribus illum ratione corporis, sit sunt fugit! Laborum
+        quibusdam cum quas ut quia, dicta distinctio qui, praesentium doloremque
+        recusandae sit minima repellendus quo, dolorem eos excepturi dolor! Aut?
+      </div>
+      <div class="nested">
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+      </div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+      <div>Lorem ipsum dolor sit.</div>
+    </div>
+  </body>
+</html>

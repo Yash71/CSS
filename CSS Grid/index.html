@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Grid</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 1em;
+    }
+    .wrapper > div {
+      background: #eee;
+      padding: 1em;
+    }
+    .wrapper > div:nth-child(odd) {
+      background: #ddd;
+    }
+  </style>
+  <body>
+    <h1>Simple grid example</h1>
+
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat
+        exercitationem fuga atque recusandae et. Explicabo inventore nihil
+        nesciunt voluptatum, autem odio necessitatibus ex commodi veritatis hic
+        quas illo quo debitis sed! Neque labore tempora eligendi architecto
+        veniam rem nemo odio tempore, deleniti, at tenetur illum aliquam
+        temporibus odit, earum veritatis. Maiores obcaecati, vero debitis fugiat
+        esse fugit sapiente non.
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quasi
+        tempora? Atque doloremque suscipit omnis debitis, voluptates vero
+        dolorem numquam rem ex labore iusto, similique quos facere iure ab quia?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat
+        exercitationem fuga atque recusandae et. Explicabo inventore nihil
+        nesciunt voluptatum, autem odio necessitatibus ex commodi veritatis hic
+        quas illo quo debitis sed! Neque labore tempora eligendi architecto
+        veniam rem nemo odio tempore, deleniti, at tenetur illum aliquam
+        temporibus odit, earum veritatis. Maiores obcaecati, vero debitis fugiat
+        esse fugit sapiente non.
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quasi
+        tempora? Atque doloremque suscipit omnis debitis, voluptates vero
+        dolorem numquam rem ex labore iusto, similique quos facere iure ab quia?
+      </div>
+    </div>
+  </body>
+</html>
