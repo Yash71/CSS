@@ -1,0 +1,49 @@
+/* basic setup */
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+/* basic setup */
+
+/* section becomes the flex container and its children become flex items */
+section {
+  display: flex;
+}
+article {
+  flex: 1; /* they'll take up equal amount of spare space left after properties like margin and padding have been set */
+}
+article:nth-of-type(3) {
+  flex: 2;
+}
+/* third article takes up twice as much of the available width as the other two.  */
+/* There are now four proportion units available in total (since 1 + 1 + 2 = 4). The first two flex items have one unit each, so they each take 1/4 of the available space. The third one has two units, so it takes up 2/4 of the available space (or one-half). */
+
+article{
+    flex:1 200px;
+}
+article:nth-of-type(3){
+    flex:2 200px;
+}
+/* Each flex item will first be given 200px of the available space. After that, the rest of the available space will be shared according to the proportion units */
+

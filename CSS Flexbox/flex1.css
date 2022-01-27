@@ -1,0 +1,37 @@
+/* basic setup */
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background: purple;
+    height: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+  
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 200px;
+  }
+  /* basic setup */
+  section{
+      display: flex;
+      /* flex-wrap: wrap; */
+      /* flex-direction: row-reverse; */
+      flex-flow: row wrap; /* shorthand for flex wrap and flex direction */
+          
+  }
+  /* section becomes the flex container and its children become flex items */
+  
