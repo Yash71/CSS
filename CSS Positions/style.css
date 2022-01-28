@@ -1,0 +1,51 @@
+.parent {
+  background: skyblue;
+  height: 200vh;
+  font-size: 2rem;
+  border: 2px solid black;
+  /* position: relative; */
+}
+.child_1 {
+  /*--------------------------------------------------- 
+        position: static;
+    default position for every element 
+    -----------------------------------------------------*/
+  /*---------------------------------------------------------------------- 
+    -- position:relative can be used when one has to customise top, bottom, left, right
+      -- adjustment is with respect to its original position
+     -----------------------------------------------------------------------*/
+
+  /* ----------------------------------------------------------------------- 
+        position: fixed;
+    -- adjustment is done with respect to the viewport. 
+    --Adjusted block remains at same place even if the page is scrolled
+    --------------------------------------------------------------------------*/
+
+  /* ------------------------------------------------------------------------
+        postion: absolute;
+    -- adjustment is done with respect to previous positioned ancestor
+    -- if there is no previous positioned ancestor, then the adjustment is done with respect to the document
+    ---------------------------------------------------------------------------*/
+
+  /* -------------------------------------------------------------------------
+        position: sticky;
+    -- mixture of both relative and fixed positioning
+    -- relatively postitions the block until the position meets the viewport while scrolling, later sticks  in place (position: fixed
+    -----------------------------------------------------------------------------*/
+  position: sticky;
+  /* width: 200px; */
+  background-color: green;
+  height: 50px;
+  border: 2px solid black;
+  top: 0;
+}
+.child_2 {
+  background-color: orange;
+  height: 50px;
+  border: 2px solid black;
+}
+.child_3 {
+  background-color: purple;
+  height: 50px;
+  border: 2px solid black;
+}
