@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box-shadow{
+    height: 200px;
+    border: 3px solid rgb(66, 59, 163);
+    width: 300px;
+    /* box-shadow: 10px -10px 8px rgb(61, 95, 61);*/ /*defining blur radius */
+    /* box-shadow: 10px -10px 8px 10px rgb(61, 95, 61);*/ /* defining spread radius */
+    /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; defining multiple shadows */
+    box-shadow: 5px 10px yellow inset;
+
+} 
