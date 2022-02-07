@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #181a1b;
+    color: #d6d3cd;
+    font-family:"Spoof",Helvetica,Arial,serif;
+    overflow-y: hidden;
+    
+}
+button{
+    cursor: pointer;
+    color: #d6d3cd;
+}
+
+a{
+    color: #d6d3cd;
+}
+.heading-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+
+}
+.heading-page a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+.heading-page .sign-up{
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    width: 6.5rem;
+    /* height: 3rem; */
+    border-radius: 5px;
+    border: 1px solid #4a5053;
+    background: transparent;
+    cursor: pointer;
+}
+.heading-page .sign-up:hover{
+    background: #9c99992d;
+}
+.sign-page{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* position: relative; */
+    /* top: 1vh; */
+}
+.sign-in{
+    /* position: relative; */
+    /* left: 50%; */
+    width: 35%;
+    margin: 1.2rem;
+    /* background: yellow; */
+    padding: 3rem;
+    /* height: 3vh; */
+
+}
+.sign-in h3{
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 100;
+    
+}
+.sign-in .sign-in-options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+.sign-in .google-signin{
+    border: 1px solid #4a5053;
+    border-radius: 5px;
+    padding: 0.8rem 1.1rem;
+    background: transparent;
+    width: 50%;
+    font-size: 1.1em;
+    /* height: calc(100% + 9rem); */
+}
+.sign-in .google-signin:hover{
+    background:#9c99992d ;
+}
+.sign-in .sign-in-options .other-signin{
+    display: flex;
+    list-style-type: none;
+}
+.other-signin li{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+.other-signin li a:hover{
+    /* text-decoration: none; */
+    opacity: 0.8;
+    
+}
+.other-signin .apple a{
+    color: rgba(255, 255, 255, 0.938);
+}
+.other-signin .facebook a{
+    color:#3c5a99;
+}
+.other-signin .github a{
+    color: rgba(250, 249, 249, 0.89);
+}
+.other-signin .twitter a{
+    color: rgb(28, 158, 209);
+}
+.sign-in-form h4{
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    
+}
+.sign-in-form .sinform input{
+    background: transparent;
+    padding: 1.1rem 1rem;
+    width: 100%;
+    /* font-size: 30px; */
+    margin: .1rem;
+    font-size: 1.2rem;
+    border: 1px solid #4a5053;
+    border-radius: 5px;
+    color: #d6d3c7;
+   
+}
+.sign-in-form .sinform input:hover{
+    border-color: rgb(131, 121, 107);
+}
+.sign-in-form .sinform input[type="password"]{
+    margin-bottom: 0.9rem;
+
+}
+
+.sign-in-form .sinform a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: relative;
+}
+.sign-in-form .sinform a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: white;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.sign-in-form .sinform a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.sign-in-form .sinform button[type="submit"]{
+    margin: 1.3rem 0;
+    width: 100%;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    /* display: block; */
+    /* text-align: center; */
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background:  rgb(15, 34, 158);
+    color: white;
+    padding:1.1rem;
+}
+.sign-in-form .sinform button[type="submit"]:hover{
+    background: rgb(46, 58, 133);
+}
+.sign-in .singin-last{
+    text-align: center;
+}
+.sign-in .singin-last a{
+    text-decoration: none;
+    position: relative;
+    
+}
+.sign-in .singin-last a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background: white;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.sign-in .singin-last a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.header-main{
+    padding: 0 0 0 1rem ;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.header-main header{
+    letter-spacing: 0.3rem;
+    /* display: flex; */
+    /* text */
+    font: size 1.1em;
+    bottom: 2rem;
+}
+.header-main header>a{
+    text-decoration: none;
+    position: relative;
+}
+.header-main header>a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in;
+    transform-origin: right;
+}
+.header-main header i:hover{
+    color: rgb(83, 83, 185);
+}
+.header-main header>a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
