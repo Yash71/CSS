@@ -123,11 +123,9 @@ button {
   text-align: center;
   border-radius: 3px;
   padding: 2rem 3rem;
-}
-.home .login .wrapper {
   font-size: 1.2rem;
+  box-shadow: 0px 0px 18px 0px #565353a8;
 }
-
 .home .login .wrapper input {
   border-radius: 3px;
   font-size: 1.1rem;
